@@ -1,6 +1,5 @@
 # DHCP-Server
 
-
 ## Installation
 
 
@@ -64,3 +63,5 @@ The code should look like
 INTERFACESv4="wlo1"
 INTERFACESv6=""
 ```
+
+Now, test the DHCP server on another device which is in the same network, the device will get assigned a new IP address.
