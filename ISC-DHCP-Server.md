@@ -1,4 +1,4 @@
-# DHCP-Server
+# DHCP Server
 
 ## Installation
 
@@ -63,5 +63,19 @@ The code should look like
 INTERFACESv4="wlo1"
 INTERFACESv6=""
 ```
+
+
+## Start the DHCP Server
+
+```bash
+sudo systemctl stop isc-dhcp-server
+```
+```bash
+sudo systemctl start isc-dhcp-server
+```
+```bash
+sudo systemctl status isc-dhcp-server
+```
+
 
 Now, test the DHCP server on another device which is in the same network, the device will get assigned a new IP address.
