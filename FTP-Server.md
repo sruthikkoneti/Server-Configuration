@@ -69,5 +69,9 @@ sudo mkdir /home/$(user1)/ftp/dir_name
 sudo chown $(user1):$(user1) /home/$(user1)/ftp/dir_name
 ```
 ```bash
-echo "my FTP server" | sudo tee /home/$(user1)/ftp/uploads/demo.txt
+echo "my FTP server" | sudo tee /home/$(user1)/ftp/dir_name/demo.txt
+```
+You can check the persmission for ftp directory by running this command
+```bash
+sudo ls -la /home/$(user1)/ftp
 ```
