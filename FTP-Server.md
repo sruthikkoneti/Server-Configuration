@@ -68,3 +68,6 @@ sudo mkdir /home/$(user1)/ftp/dir_name
 ```bash
 sudo chown $(user1):$(user1) /home/$(user1)/ftp/dir_name
 ```
+```bash
+echo "my FTP server" | sudo tee /home/$(user1)/ftp/uploads/demo.txt
+```
