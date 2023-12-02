@@ -47,5 +47,9 @@ Now, the ports are open and ready to accept the traffic
 
 Create a user who can access FTP on the device
 ```bash
-sudo adduser $(yourName)
+sudo adduser $(user1)
+```
+Create an FTP folder for the user in the home directory
+```bash
+sudo mkdir /home/$(user1)/ftp
 ```
