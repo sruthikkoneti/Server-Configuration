@@ -38,3 +38,8 @@ passv_min_port=10000
 passv_max_port=10100
 ``` 
 Now save it by pressing `Ctrl+X` and then `Y`
+
+Configure the Firewall and open the ports
+```bash
+sudo ufw allow from any to any port 20,21,10000:10100 proto tcp
+```
