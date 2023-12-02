@@ -18,7 +18,7 @@ The ISC-DHCP server is installed
 cd /etc/dhcp
 ``` 
 ```bash
-apt-get install isc-dhcp-server
+sudo apt-get install isc-dhcp-server
 ```
 1)List the directory to check if  `dhcpd.conf` is present or not\
 2)Run this command to make a copy of the config file
@@ -36,6 +36,7 @@ Add the following code:
 # Config added by Sruthik 
 #
 subnet 10.102.142.0 netmask 255.255.255.0 {
+authoritative;
 option subnet-mask 255.255.255.0;
 option broadcast-address 10.102.142.255;
 option routers 10.102.142.1;
