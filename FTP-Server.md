@@ -82,6 +82,7 @@ echo "some-text" | sudo tee -a /etc/vsftpd.userlist
 Restart FTP server to apply the changes
 ```bash
 sudo systemctl restart vsftpd
+sudo  systemctl status vsftpd
 ```
 Open the config file again and slide to the bottom
 ```bash
