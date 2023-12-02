@@ -88,7 +88,7 @@ Open the config file again and slide to the bottom
 sudo nano /etc/vsftpd.conf
 ```
 Add the piece of code so that the server only allows access users who are in the local database
-``bash
+```bash
 userlist_enable=YES
 userlist_file=/etc/vsftpd.userlist
 userlist_deny=NO
