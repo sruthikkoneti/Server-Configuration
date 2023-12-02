@@ -53,3 +53,10 @@ Create an FTP folder for the user in the home directory
 ```bash
 sudo mkdir /home/$(user1)/ftp
 ```
+Configure the ownership of the user
+```bash
+sudo chown nobody:nogroup /home/$(user1)/ftp
+```
+```bash
+sudo chmod a-w /home/$(user1)/ftp
+```
