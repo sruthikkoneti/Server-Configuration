@@ -60,7 +60,6 @@ sudo chown nobody:nogroup /home/$(user1)/ftp
 ```bash
 sudo chmod a-w /home/$(user1)/ftp
 ```
-```bash
 Create a directory for user to access for transfers
 `dir_name`=`uploads`
 ```bash
