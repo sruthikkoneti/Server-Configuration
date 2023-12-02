@@ -79,3 +79,17 @@ Add the created user to FTP users list to login
 ```bash
 echo "some-text" | sudo tee -a /etc/vsftpd.userlist
 ```
+Restart FTP server to apply the changes
+```bash
+sudo systemctl restart vsftpd
+```
+Open the config file again and slide to the bottom
+```bash
+sudo nano /etc/vsftpd.conf
+```
+Add the piece of code so that the server only allows access users who are in the local database
+``bash
+userlist_enable=YES
+userlist_file=/etc/vsftpd.userlist
+userlist_deny=NO
+```
