@@ -43,3 +43,9 @@ Configure the Firewall and open the ports
 ```bash
 sudo ufw allow from any to any port 20,21,10000:10100 proto tcp
 ```
+Now, the ports are open and ready to accept the traffic
+
+Create a user who can access FTP on the device
+```bash
+sudo adduser $(yourName)
+```
