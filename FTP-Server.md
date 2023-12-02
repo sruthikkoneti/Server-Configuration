@@ -75,3 +75,7 @@ You can check the persmission for ftp directory by running this command
 ```bash
 sudo ls -la /home/$(user1)/ftp
 ```
+Add the created user to FTP users list to login
+```bash
+echo "some-text" | sudo tee -a /etc/vsftpd.userlist
+```
