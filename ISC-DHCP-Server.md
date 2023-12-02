@@ -28,7 +28,7 @@ sudo cp dhcpd.conf dhcpd.conf.bk
 
 Open the `dhcpd.conf` file now 
 ```bash
-nano etc/dhcp/dhcpd.conf
+sudo nano etc/dhcp/dhcpd.conf
 ```
 At the end of the file, 
 Add the following code:
