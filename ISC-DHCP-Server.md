@@ -35,16 +35,17 @@ Add the following code:
 ```
 # Config added by Sruthik 
 #
-subnet 10.102.142.0 netmask 255.255.255.0 {
+subnet 10.42.0.0 netmask 255.255.255.0 {
 authoritative;
 option subnet-mask 255.255.255.0;
-option broadcast-address 10.102.142.255;
-option routers 10.102.142.1;
+option broadcast-address 10.42.0.255;
+option routers 10.42.0.1;
 
 
-range 10.102.142.100 10.102.142.125;
+range 10.42.0.100 10.42.0.125;
 
 }
+
 ``` 
 where inplace of 10.102.142.0, place your `NETWORK ID` taken from IP address
 
@@ -64,7 +65,14 @@ The code should look like
 INTERFACESv4="wlo1"
 INTERFACESv6=""
 ```
-
+Set the device to listen for DHCP requests
+```bash
+sudo ip link set up dev wlo1
+```
+Then, 
+```bash
+sudo ifconfig wlo1 10.42.0.1/24
+```
 
 ## Start the DHCP Server
 
