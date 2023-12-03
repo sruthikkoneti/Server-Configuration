@@ -77,7 +77,7 @@ sudo ls -la /home/$(user1)/ftp
 ```
 Add the created user to FTP users list to login
 ```bash
-echo "some-text" | sudo tee -a /etc/vsftpd.userlist
+echo "$(user1)" | sudo tee -a /etc/vsftpd.userlist
 ```
 Restart FTP server to apply the changes
 ```bash
